@@ -3,7 +3,7 @@
 ## 🚀 Overview
 This project is a custom **Client/Server Network Packet Analyzer** built for the Trivial File Transfer Protocol (TFTP). Functioning as a transparent proxy, it sits between a client and server to capture, inspect, and visualize network traffic in real-time.
 
-Designed to meet the requirements of a **Network Packet Analyzer & Display Tool**, it features a **Web-Based Dashboard** to display packet headers (Opcodes, Block Numbers) and an **Active Fault Injection Engine** to simulate network anomalies.
+Designed to meet the requirements of a **Network Packet Analyzer & Display Tool**, one of the **Computer Networks** projects at the Faculty of Engineering in Foreign Languages of UNSTPB, it features a **Web-Based Dashboard** to display packet headers (Opcodes, Block Numbers) and an **Active Fault Injection Engine** to simulate network anomalies.
 
 ## ⚡ Key Features
 * **Packet Analyzer:** Real-time parsing of TFTP protocol headers (RRQ, WRQ, DATA, ACK).
