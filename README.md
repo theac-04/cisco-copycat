@@ -1,31 +1,16 @@
-# Cisco-Copycat: TFTP Visual Analyzer 🛡️📊
+# Cisco Copycat: TFTP Visual Analyzer 🛡️📊
 
-**Cisco Copycat** is a Python-based network analysis tool designed to intercept, modify, and visualize TFTP (Trivial File Transfer Protocol) traffic in a virtualized environment. By acting as a transparent proxy, the tool allows researchers and students to simulate various network scenarios—from normal file transfers to packet loss and spoofing attacks—while watching the data flow in real-time through a custom Pygame-based GUI.
+**Cisco Copycat** is a Python-based network analysis tool designed to intercept, modify, and visualize TFTP traffic in a virtualized environment. It acts as a transparent proxy, allowing you to simulate and watch network scenarios in real-time through a Pygame GUI.
 
 ## 🚀 Key Features
+* **Real-time Visualizer**: Tracks packets moving between **Client**, **Proxy**, and **Server**.
+* **Color-Coded Traffic**: 🟦 DATA (Blue), 🟨 ACK (Yellow), 🟩 Control (Green), 🟥 ERROR (Red).
+* **7 Scenarios**: Includes normal transmission, packet delays (25s), oversized payloads, and ACK spoofing.
 
-* **Real-time Visualizer**: A high-speed Pygame interface that tracks packets as they move between **Client**, **Proxy**, and **Server**.
-* **Color-Coded Traffic**: Instantly distinguish between packet types:
-    * 🟦 **Blue**: DATA packets.
-    * 🟨 **Yellow**: ACK (Acknowledgment) packets.
-    * 🟩 **Green**: Control/RRQ/WRQ packets.
-    * 🟥 **Red**: ERROR or Malformed packets.
-* **7 Interactive Scenarios**: Test network resilience with built-in scenarios including:
-    * **Scenario 3/4**: Simulated 25-second latency.
-    * **Scenario 5**: Error injection (replacing DATA with ERROR).
-    * **Scenario 7**: ACK Spoofing (intercepting data without forwarding).
-* **Packet Inspection**: Dynamic labels showing OpCodes and Block Numbers as packets travel.
+## 📥 Setup
+1. **Install Dependencies**: `pip install pygame scapy`
+2. **Network**: Use VirtualBox **Internal Network**. Client IP: `192.168.40.80`, Server IP: `192.168.30.90`.
+3. **Run**: `sudo python3 main.py`
 
-## 🛠️ Technology Stack
-
-* **Language**: Python 3.x
-* **Visualization**: Pygame
-* **Networking**: Raw Sockets & Scapy
-* **Environment**: Optimized for Debian Linux VMs (VirtualBox)
-
-## 📥 Installation & Setup
-
-### 1. Prerequisites
-Ensure you have Pygame and Scapy installed on your Client VM:
-```bash
-pip install pygame scapy
+---
+**Authors**: Theodora-Mihaela Cimpoeru & Cristian Radu
