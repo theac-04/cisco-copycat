@@ -39,18 +39,17 @@ class Proxy:
     def receive(self, socket):
         packet, address = socket.recvfrom(1024)
         sender = self.__get_sender_from_ip(address[0])
-        
-        # Determine Color and Label for Clarity
-        pkt_color = (100, 255, 100) # Default Green
+    
+        pkt_color = (100, 255, 100)
         pkt_label = "TFTP"
         
         if len(packet) >= 2:
             opcode = packet[1]
             if opcode == 3: 
-                pkt_color = (0, 100, 255) # Blue for DATA
+                pkt_color = (0, 100, 255)
                 pkt_label = f"DATA:{self.get_blocknumber(packet)}"
             elif opcode == 4: 
-                pkt_color = (255, 255, 0) # Yellow for ACK
+                pkt_color = (255, 255, 0)
                 pkt_label = f"ACK:{self.get_blocknumber(packet)}"
 
         time.sleep(0.2)
@@ -62,10 +61,9 @@ class Proxy:
         return (packet, address)
 
     def forward(self, socket, address, packet, label_override=None, color_override=None):
-        # Determine logical destination
+ 
         dest_name = "Server" if address[0] == SERVER_IP else "Client"
 
-        # Apply Scenario Overrides or Automatic Colors
         pkt_label = label_override if label_override else "FORWARD"
         pkt_color = color_override if color_override else (100, 255, 100)
         
@@ -83,10 +81,6 @@ class Proxy:
             'l': pkt_label, 'c': pkt_color 
         })
         socket.sendto(packet, address)
-
-# ======================================================================================================================
-# SCENARIOS (UNCHANGED LOGIC, UPDATED CALLS)
-# ======================================================================================================================
 
 def handle_normal_transmission(proxy, initial_proxy_socket, proxy_to_server_socket, proxy_to_client_socket):
     reset = False; connected = False; last_ack = -1; last_block = -1
