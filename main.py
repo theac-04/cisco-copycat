@@ -36,7 +36,6 @@ def main():
             initial_sock.bind((pl.PROXY_IP_CLIENTSIDE, pl.TFTP_PORT))
 
             server_sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-            # Use eth0 for the Internal Network connection
             server_sock.setsockopt(socket.SOL_SOCKET, 25, str("eth0" + "\0").encode("ascii"))
 
             client_sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
