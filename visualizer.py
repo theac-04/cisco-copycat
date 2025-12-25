@@ -54,6 +54,5 @@ class TFTPVisualizer:
             for event in pygame.event.get():
                 if event.type == pygame.QUIT: running = False
             pygame.display.flip()
-            # SLOW MOTION: Frame rate lowered to 15 FPS
             self.clock.tick(60)
         pygame.quit()
