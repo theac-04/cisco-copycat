@@ -36,9 +36,9 @@ ping -c 3 192.168.30.90
 
 The following scripts are included in this repository to handle the automation logic:
 
-main.py: The entry point for the replication process.
-proxy_logic.py: The "Man-in-the-Middle" engine that intercepts raw TFTP packets, parses Opcodes (RRQ - READ REQUEST, WRQ - WRITE REQUEST, DATA, ACK), and handles forwarding.
-visualizer.py: A pygame-based engine that renders a real-time animation of the network topology (Client ↔ Proxy ↔ Server).
+* main.py: The entry point for the replication process.
+* proxy_logic.py: The "Man-in-the-Middle" engine that intercepts raw TFTP packets, parses Opcodes (RRQ - READ REQUEST, WRQ - WRITE REQUEST, DATA, ACK), and handles forwarding.
+* visualizer.py: A pygame-based engine that renders a real-time animation of the network topology (Client ↔ Proxy ↔ Server).
 
 ### Supported Attack Scenarios
 
