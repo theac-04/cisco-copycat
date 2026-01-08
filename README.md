@@ -58,9 +58,9 @@ Normal Transmision (Scenario 0): While not an attack pattern, this simulates a n
 
 ### Visual Documentation
 
-[Server Customisation](assets/ss1.jpeg)
-[Client Code Snippet](assets/ss2.jpeg)
-[Trial Run with open Terminal and Interface](assets/ss3.jpeg)
+[![Server Customisation](assets/ss1.jpeg)
+[![Client Code Snippet](assets/ss2.jpeg)
+[![Trial Run with open Terminal and Interface](assets/ss3.jpeg)
 [Scenario 0 Run](assets/v1.mp4)
 [Scenario 1 Run](assets/v2.mp4)
 [Scenario 3 Run](assets/v3.mp4)
