@@ -61,10 +61,7 @@ Normal Transmision (Scenario 0): While not an attack pattern, this simulates a n
 [![Server Customisation](assets/ss1.jpeg)
 [![Client Code Snippet](assets/ss2.jpeg)
 [![Trial Run with open Terminal and Interface](assets/ss3.jpeg)
-<p align="center">
-  <video src="https://github.com/theac-04/cisco-copycat/blob/main/assets/v1.mp4?raw=true" width="100%" controls>
-  </video>
-</p>
+[Scenario 0 Run](assets/v1.mp4)
 [Scenario 1 Run](assets/v2.mp4)
 [Scenario 3 Run](assets/v3.mp4)
 
