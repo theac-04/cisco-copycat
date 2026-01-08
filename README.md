@@ -42,11 +42,11 @@ visualizer.py: A pygame-based engine that renders a real-time animation of the n
 
 ### Supported Attack Scenarios
 
-Oversized Payloads: Appends data to packets to exceed 512 bytes.
-Block Number Manipulation: Modifies ACK numbers to desync the transfer.
-Latency Simulation: Introduces 25-second delays to trigger protocol timeouts.
-Error Injection: Swaps valid DATA packets with TFTP ERROR codes.
-Normal Transmision (Scenario 0): While not an attack pattern, this simulates a normal packet transmission from Client to Server.
+***Oversized Payloads: Appends data to packets to exceed 512 bytes.
+***Block Number Manipulation: Modifies ACK numbers to desync the transfer.
+***Latency Simulation: Introduces 25-second delays to trigger protocol timeouts.
+***Error Injection: Swaps valid DATA packets with TFTP ERROR codes.
+***Normal Transmision (Scenario 0): While not an attack pattern, this simulates a normal packet transmission from Client to Server.
 
 ### How to Run
 
